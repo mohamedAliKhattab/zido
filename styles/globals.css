@@ -1,0 +1,239 @@
+@import "fonts.css";
+@import "navbar.css";
+@import "footer.css";
+@import "home.css";
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply !font-tufuliArabic;
+  scroll-behavior: smooth;
+}
+html {
+  @apply sm:text-[14px] sm:text-[15px] md:text-[16px];
+}
+body {
+  @apply !pt-0;
+}
+section,
+footer,
+header {
+  @apply overflow-x-clip;
+}
+.ant-form *,
+.ant-form input,
+.ant-form ::placeholder,
+.ant-input::placeholder,
+.ant-input,
+::-webkit-input-placeholder,
+:-ms-input-placeholder,
+::placeholder,
+input,
+.ant-input-affix-wrapper,
+.ant-input-affix-wrapper > input.ant-input,
+.ant-input-group-wrapper,
+.ant-input-group,
+.ant-input-group > .ant-input {
+  @apply !font-tufuliArabic;
+}
+
+.ant-form ::placeholder,
+.ant-input::placeholder,
+::placeholder,
+input::placeholder {
+  @apply !text-[rgba(157,157,157,0.34)];
+}
+
+::-webkit-scrollbar {
+  @apply !w-[7px];
+}
+::-webkit-scrollbar-track {
+  @apply rounded-[10px] bg-white shadow-[inset_0_0_5px_rgba(0,0,0,0.2)];
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-[10px] bg-maqraaBlue;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-maqraaBlue;
+}
+.sm-scroll::-webkit-scrollbar {
+  @apply !w-[5px];
+}
+.sm-scroll::-webkit-scrollbar-thumb {
+  @apply !rounded-[5px];
+}
+
+.dir-rtl {
+  direction: rtl;
+}
+
+.dir-ltr {
+  direction: ltr;
+}
+.main-navbar {
+  padding: 10px 0px;
+}
+.main-btn {
+  @apply h-[65px] w-[180px] !border-none !bg-transparent !p-2 !py-6 text-base !font-normal !shadow-none !outline-none sm:text-lg lg:h-[82px] lg:w-[220px] lg:text-lg xl:text-xl;
+}
+.main-orange-btn {
+  @apply bg-[url("/assets/orange-bg.png")] bg-contain bg-center bg-no-repeat !text-maqraaYellow  transition-[.3s] transition-colors hover:!text-white;
+}
+.main-yellow-btn {
+  @apply bg-[url("/assets/yellow-bg.png")] bg-contain bg-center bg-no-repeat !text-maqraaDarkBlue transition-[.3s] transition-colors hover:!text-maqraaOrange;
+}
+.main-orange-btn:hover .main-btn-icon svg,
+.main-orange-btn:hover .main-btn-icon svg * {
+  @apply !fill-white transition-[.3s] transition-[fill];
+}
+.main-yellow-btn:hover .main-btn-icon svg,
+.main-yellow-btn:hover .main-btn-icon svg * {
+  @apply !fill-maqraaOrange transition-[.3s] transition-[fill];
+}
+
+.main-dark-blue-btn {
+  @apply bg-[url("/assets/dark-blue-bg.png")] bg-contain bg-center bg-no-repeat !text-maqraaLightBlue  transition-[.3s] transition-colors hover:!text-white;
+}
+.main-dark-blue-btn:hover .main-btn-icon svg,
+.main-dark-blue-btn:hover .main-btn-icon svg * {
+  @apply !fill-white transition-[.3s] transition-[fill];
+}
+
+.main-blue-btn {
+  @apply bg-[url("/assets/blue-bg.png")] bg-contain bg-center bg-no-repeat !text-white  transition-[.3s] transition-colors hover:!text-maqraaGreen;
+}
+.main-blue-btn:hover .main-btn-icon svg,
+.main-blue-btn:hover .main-btn-icon svg * {
+  @apply !fill-white transition-[.3s] transition-[fill];
+}
+
+.main-green-btn {
+  @apply bg-[url("/assets/green-bg.png")] bg-contain bg-center bg-no-repeat !text-white  transition-[.3s] transition-colors hover:!text-maqraaBlue;
+}
+.main-green-btn:hover .main-btn-icon svg,
+.main-green-btn:hover .main-btn-icon svg * {
+  @apply !fill-white transition-[.3s] transition-[fill];
+}
+
+.main-btn-icon {
+  @apply !flex h-[30px] w-[30px] items-center justify-center sm:h-[40px] sm:w-[40px];
+}
+.main-btn-icon img {
+  @apply h-auto w-full object-scale-down;
+}
+.video-bg-image {
+  @apply h-[97%] w-[101%];
+}
+.calendly-popup-content iframe {
+  @apply rounded-md bg-maqraaLightBlue-100  p-4;
+}
+.calendly-popup-close {
+  @apply !p-3;
+}
+.ant-modal-close svg {
+  @apply h-6 w-6;
+}
+.calendly-modal .ant-modal-content {
+  @apply !m-3;
+}
+.rtl-element,
+.ant-carousel .slick-dots {
+  direction: rtl !important;
+}
+.teacher-row {
+}
+.teacher-row .teacher-image {
+  @apply mx-auto flex max-w-[250px] items-center justify-center md:max-w-[320px] lg:max-w-[260px] xl:max-w-[320px];
+}
+.teacher-row .teacher-image img {
+  @apply object-scale-down;
+}
+.teacher-row .teacher-image img {
+  @apply relative z-20;
+}
+.teacher-row .teacher-image .arrow {
+  @apply left-[-10%] top-[20%] z-10 max-w-[80px];
+}
+.teacher-row .name {
+  @apply mb-10 text-xl font-semibold;
+}
+.teacher-row .teacher-details,
+.teacher-row .teacher-details {
+  @apply mx-auto max-w-[400px] lg:max-w-full;
+}
+.teacher-row .details li {
+  @apply relative mb-6 pr-[40px] text-lg leading-9 text-maqraaDarkBlue before:absolute before:right-0 before:top-[5px] before:content-teacher-icon;
+}
+.ant-carousel .slick-dots {
+  @apply -bottom-14;
+}
+.teachers-carousel {
+  /* @apply; */
+}
+
+.teachers-carousel .slick-dots,
+.achievements-carousel .slick-dots {
+  @apply !flex items-center;
+}
+.teachers-carousel .slick-dots li,
+.achievements-carousel .slick-dots li {
+  @apply flex h-[6px] items-center;
+}
+.teachers-carousel .slick-dots li button,
+.achievements-carousel .slick-dots li button {
+  @apply h-[4px]  rounded-md !bg-white opacity-100;
+}
+.teachers-carousel .slick-dots .slick-active button,
+.achievements-carousel .slick-dots .slick-active button {
+  @apply h-[6px] !bg-maqraaOrange;
+}
+.achievements-carousel .slick-dots .slick-active button {
+  @apply !bg-maqraaGreen;
+}
+.teachers-carousel .ant-row,
+.achievements-carousel .ant-row {
+  @apply items-center justify-center lg:items-start lg:justify-normal;
+}
+
+.achievement-card .icon svg {
+  @apply max-w-full object-scale-down;
+}
+.custom-breadcrumb ol {
+  @apply flex flex-wrap items-center gap-2;
+}
+.custom-breadcrumb li.ant-breadcrumb-separator {
+  @apply m-0  text-xs;
+}
+.custom-breadcrumb li:not(.ant-breadcrumb-separator) {
+  @apply flex min-w-[70px] items-center justify-center rounded-full !bg-maqraaLightBlue-400 p-2 px-3 text-[#B0B0B0];
+}
+.custom-breadcrumb li a {
+  @apply h-auto  !bg-transparent text-maqraaDarkBlue;
+}
+.custom-breadcrumb li * {
+  @apply !text-xs;
+}
+
+.teachers-details .details-list li {
+  @apply relative mb-4 mr-[50px] text-xl leading-9 text-black before:absolute before:right-[-50px] before:top-[-2px] before:scale-[.7] before:content-teacher-icon xl:mb-6 xl:text-[24px] xl:before:scale-[.8] 2xl:mb-8 2xl:text-[34px] 2xl:before:scale-[1];
+}
+.teachers-details .details-list li {
+  @apply w-fit rounded-lg border-b border-dashed border-[#dedede7f];
+}
+.contact-phone {
+  @apply overflow-hidden rounded-md bg-white;
+}
+.contact-phone input {
+  direction: rtl;
+  @apply h-full !border-none px-[11px] py-[4px] !text-start !shadow-none !outline-none;
+}
+.dir-rtl .PhoneInputCountry {
+  @apply flex gap-1;
+}
+footer input,
+footer textarea {
+  @apply !border-none;
+}

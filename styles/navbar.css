@@ -1,0 +1,27 @@
+.maqraa-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+body {
+  padding-top: 60px;
+}
+.nav-item-link.active {
+  @apply !bg-maqraaDarkBlue !text-white;
+}
+.maqraa-home-navbar .nav-item-link {
+  @apply !bg-transparent !text-lg !font-medium !text-white 2xl:!text-xl;
+}
+.maqraa-home-navbar .nav-item-link.active,
+.maqraa-home-navbar .nav-item-link:hover {
+  @apply !bg-maqraaGreen !text-white;
+}
+.maqraa-home-navbar .mobile-links .nav-item-link {
+  @apply !text-maqraaBlue;
+}
+.maqraa-home-navbar .mobile-links .nav-item-link.active,
+.maqraa-home-navbar .mobile-links .nav-item-link:hover {
+  @apply !bg-maqraaBlue !text-white;
+}

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "TufuliArabic";
+  src: url("/fonts/TufuliArabic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UrdType";
+  src: url("/fonts/UrdType.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Alexandria";
+  src: url("https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800;900&display=swap")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
